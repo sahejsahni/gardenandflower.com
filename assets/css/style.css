@@ -184,6 +184,17 @@ h4, .ts-h4 {
     font-size: 2.5rem;
 }
 
+@media (max-width: 74.9rem) {
+    #head {
+        font-size: 1.9rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    .subhead {
+        font-size: 1.1rem;
+    }
+}
 .subhead {
     margin-top: 6vh;
 }
@@ -1610,7 +1621,7 @@ blockquote h2 {
 .btn {
     border-width: .125rem;
     box-shadow: none;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.2rem;
     padding: 1.2rem 2.5rem;
     position: relative;
@@ -2184,6 +2195,11 @@ form label, .ts-form label {
     filter: brightness(40%);
 }
 
+.pj-background:hover {
+    transform: scale(1.2);
+    transition: all 1s ease-out;
+}
+
 .ts-gallery__item:hover .ts-background {
     -webkit-transform: scale(1.1) rotate(.01deg);
             transform: scale(1.1) rotate(.01deg);
@@ -2206,7 +2222,7 @@ form label, .ts-form label {
 
 @media (min-width: 36rem) {
     .ts-gallery__item h3 {
-        font-size: 2.625rem;
+        font-size: 1.8rem;
     }
 }
 
@@ -2258,7 +2274,7 @@ form label, .ts-form label {
     padding: 2rem;
 }
 
-.ts-gallery__masonry .ts-gallery__item-description h5 {
+.ts-gallery__item-description h5 {
     font-size: 1rem;
 }
 
