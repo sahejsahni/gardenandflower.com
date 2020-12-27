@@ -83,7 +83,7 @@ A. Basic Styling
 -------------------------------------------*/
 
 body {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 1rem;
     margin: 0;
     padding: 0;
@@ -118,11 +118,8 @@ html {
 }
 
 h1, .ts-h1 {
-    font-size: 2.5rem;
-    font-weight: 300;
+    font-weight: 600;
     margin-bottom: .5rem;
-    font-style: italic;
-    color: #fff;
 }
 
 @media (min-width: 48rem) {
@@ -133,7 +130,7 @@ h1, .ts-h1 {
 
 @media (min-width: 75rem) {
     h1, .ts-h1 {
-        font-size: 6rem;
+        font-size: 4rem;
     }
 }
 
@@ -181,12 +178,14 @@ h4, .ts-h4 {
     font-size: 1.25rem;
     margin-bottom: 1.875rem;
     font-weight: 300;
-    font-family: 'Forum', cursive;
-    color: #fff;
+    color: black;
+}
+#head {
+    font-size: 2.5rem;
 }
 
 .subhead {
-    margin-top: 10vh;
+    margin-top: 6vh;
 }
 
 @media (min-width: 48rem) {
@@ -210,7 +209,7 @@ h6, .ts-h6 {
 }
 
 .font-alt {
-    font-family: 'Forum', cursive !important;
+    font-family: 'Crimson Text', serif  !important;
 }
 
 /***********************************************************************************************************************
@@ -847,6 +846,15 @@ B. Helpers
     opacity: .4;
 }
 
+@media (min-width: 36rem) {
+    .desc-list{
+        padding-left: 40px;
+    }
+}
+
+
+
+
 /*-------------------------------------------
   -- No Gutters - Removes padding from col*
 -------------------------------------------*/
@@ -1373,13 +1381,6 @@ C. Components
     }
 }
 
-@media (min-width: 75rem) {
-    .ts-block {
-        padding-bottom: 9rem;
-        padding-top: 9rem;
-    }
-}
-
 .ts-block-inside {
     padding: 1.5rem;
     position: relative;
@@ -1402,8 +1403,9 @@ section {
 }
 
 .coming-soon {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-color: #FFF4E8;
 }
 
 /*-------------------------------------------
@@ -2168,14 +2170,18 @@ form label, .ts-form label {
     margin-bottom: 0;
     color: #fff;
     z-index: 1;
-}
+})
 
 .ts-gallery__item.ts-floated-description {
     background-color: #000;
 }
 
-.ts-gallery__item.ts-floated-description .ts-background {
+.ts-background {
     opacity: .6;
+}
+
+.pj-background {
+    filter: brightness(40%);
 }
 
 .ts-gallery__item:hover .ts-background {
@@ -2490,6 +2496,21 @@ nav .navbar-nav li a:hover{
 @media (max-width: 35.9375rem) {
     #brand-navigation {
         height: 4.5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .mob-only {
+        display: none;
+    }
+    .proj-header {
+        padding: 240px 0px 160px;
     }
 }
 
@@ -2868,7 +2889,7 @@ E. Template Specific Elements
     background-image: linear-gradient(currentColor, currentColor);
     background-position: 100% 100%;
     background-repeat: no-repeat;
-    background-size: 100% .125rem;
+    background-size: 100% .05rem;
     transition: background-size .3s cubic-bezier(.77, 0, .18, 1);
 }
 
@@ -2989,7 +3010,7 @@ h1 a.ts-underline {
     }
 
     .nav-links {
-        margin-right: 0;
+        margin-right: auto;
         margin-left: auto;
     }
 
