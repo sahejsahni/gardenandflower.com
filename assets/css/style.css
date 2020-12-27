@@ -186,7 +186,8 @@ h4, .ts-h4 {
 
 @media (max-width: 74.9rem) {
     #head {
-        font-size: 1.9rem;
+        font-size: 1.6rem;
+        padding: 5vw;
     }
     h2 {
         font-size: 1.4rem;
