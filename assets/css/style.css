@@ -178,27 +178,31 @@ h4, .ts-h4 {
     font-size: 1.25rem;
     margin-bottom: 1.875rem;
     font-weight: 300;
-    color: black;
 }
 #head {
     font-size: 2.5rem;
+}
+
+.subhead {
+    margin-top: 6vh;
+    color: #000;
 }
 
 @media (max-width: 74.9rem) {
     #head {
         font-size: 1.6rem;
         padding: 5vw;
+        color: white;
     }
     h2 {
         font-size: 1.4rem;
     }
     .subhead {
         font-size: 1.1rem;
+        color: white;
     }
 }
-.subhead {
-    margin-top: 6vh;
-}
+
 
 @media (min-width: 48rem) {
     h4, .ts-h4 {
