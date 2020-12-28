@@ -2475,7 +2475,7 @@ body.has-loading-screen.loading-done #brand-navigation {
     background-image: url('../img/bg.jpg'); 
     background-size: cover;
     background-repeat: no-repeat; 
-    background-color: #fff; 
+    background-color: #000; 
     background-position: center;
 }
 
