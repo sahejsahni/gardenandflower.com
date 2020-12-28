@@ -168,9 +168,17 @@ h3, .ts-h3 {
     }
 }
 
+.pd-lg {
+    padding-left: 30;
+}
+
 @media (min-width: 75rem) {
     h3, .ts-h3 {
         font-size: 1.875rem;
+    }
+    
+    .pd-lg {
+        padding-left: 80px;
     }
 }
 
@@ -181,20 +189,23 @@ h4, .ts-h4 {
 }
 #head {
     font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 5vh;
 }
 
 .subhead {
-    margin-top: 6vh;
+    margin-top: 10vh;
     text-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
+    line-height: 1.5;
 }
 
 @media (max-width: 74.9rem) {
     #head {
-        font-size: 1.6rem;
-        padding: 5vw;
+        font-size: 1.8rem;
+        margin-top: 15vh;
     }
     h2 {
-        font-size: 1.4rem;
+        font-size: 2rem;
     }
     .subhead {
         font-size: 1.1rem;
@@ -210,6 +221,7 @@ h4, .ts-h4 {
 
 h5, .ts-h5 {
     font-size: 1.125rem;
+    line-height: 1.5;
 }
 
 @media (min-width: 36rem) {
@@ -220,6 +232,7 @@ h5, .ts-h5 {
 
 h6, .ts-h6 {
     font-size: 1rem;
+    line-height: 1.5;
 }
 
 .font-alt {
@@ -872,7 +885,6 @@ B. Helpers
 
 
 
-
 /*-------------------------------------------
   -- No Gutters - Removes padding from col*
 -------------------------------------------*/
@@ -1424,6 +1436,14 @@ section {
     padding-top: 8rem;
     padding-bottom: 8rem;
     background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .coming-soon {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        background-color: #fff;
+    }
 }
 
 /*-------------------------------------------
@@ -2212,7 +2232,8 @@ form label, .ts-form label {
             transform: scale(1.1) rotate(.01deg);
 }
 
-.ts-gallery__item.ts-half {
+#the-team {
+    background-color: black;
 }
 
 @media (min-width: 36rem) {
@@ -2751,6 +2772,15 @@ body.nav-hovered #main-navigation .navbar-toggler {
 
 .ts-slider.owl-carousel .owl-dots .owl-dot.active span {
     background-color: #fff;
+}
+
+.carousel-fade .carousel-item, .carousel-item img  {
+    height: 80vh;
+    height: 100%;
+}
+
+.carousel-control-next, .carousel-control-prev {
+      opacity: 1;
 }
 
 /***********************************************************************************************************************
