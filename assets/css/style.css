@@ -184,25 +184,37 @@ h3, .ts-h3 {
 
 h4, .ts-h4 {
     font-size: 1.25rem;
-    margin-bottom: 1.875rem;
     font-weight: 300;
 }
 #head {
     font-size: 2.5rem;
-    font-weight: 600;
-    margin-top: 5vh;
+    font-weight: 400;
+    margin-top: auto;
+}
+
+.hero-wrapper {
+    height: 100%;
 }
 
 .subhead {
-    margin-top: 10vh;
+    margin-top: 5vh;
     text-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
     line-height: 1.5;
+}
+
+.about-pic {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.details {
+    max-width: 66%;
 }
 
 @media (max-width: 74.9rem) {
     #head {
         font-size: 1.8rem;
-        margin-top: 15vh;
+        margin-top: ;
     }
     h2 {
         font-size: 2rem;
@@ -211,11 +223,17 @@ h4, .ts-h4 {
         font-size: 1.1rem;
     }
 }
+.subhead {
+    font-size: 1.3rem;
+}
 
 
 @media (min-width: 48rem) {
     h4, .ts-h4 {
         font-size: 1.5rem;
+    }
+    .about-pic {
+    padding-right: 5vw;
     }
 }
 
@@ -237,6 +255,10 @@ h6, .ts-h6 {
 
 .font-alt {
     font-family: 'Crimson Text', serif  !important;
+}
+
+.credit {
+    font-size: 1.1rem;
 }
 
 /***********************************************************************************************************************
@@ -1100,7 +1122,7 @@ a {
 }
 
 a:hover {
-    color: #000;
+    color: rgb(129, 129, 129);
     text-decoration: none;
 }
 
@@ -1444,6 +1466,12 @@ section {
         padding-bottom: 4rem;
         background-color: #fff;
     }
+}
+
+.carousel-section {
+    padding-top: 60px;
+    background-color: #000;
+    border-bot tom: .0625rem solid rgba(255, 255, 255, .3)
 }
 
 /*-------------------------------------------
@@ -2558,7 +2586,7 @@ nav .navbar-nav li a:hover{
         display: none;
     }
     .proj-header {
-        padding: 240px 0px 160px;
+        padding: 120px 0px 80px;
     }
 }
 
@@ -2619,6 +2647,19 @@ body.nav-hovered #main-navigation .navbar-toggler {
     right: 0;
 }
 
+.logo-wrapper {
+    margin-top: 14vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    height: 120px;
+}
+
+.subhead a:hover {
+    text-decoration: underline;
+}
 /*-------------------------------------------
   -- Page
 -------------------------------------------*/
@@ -2782,160 +2823,6 @@ body.nav-hovered #main-navigation .navbar-toggler {
 .carousel-control-next, .carousel-control-prev {
       opacity: 1;
 }
-
-/***********************************************************************************************************************
-D. Plugins Styles
-***********************************************************************************************************************/
-
-/*-------------------------------------------
-  -- Magnific Popup
--------------------------------------------*/
-
-/* overlay at start */
-
-.mfp-fade.mfp-bg {
-    opacity: 0;
-    background-color: #000;
-    transition: all .15s ease-out;
-}
-
-/* overlay animate in */
-
-.mfp-fade.mfp-bg.mfp-ready {
-    opacity: .8;
-}
-
-/* overlay animate out */
-
-.mfp-fade.mfp-bg.mfp-removing {
-    opacity: 0;
-}
-
-/* content at start */
-
-.mfp-fade.mfp-wrap .mfp-content {
-    opacity: 0;
-    transition: all .15s ease-out;
-}
-
-/* content animate it */
-
-.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
-    opacity: 1;
-}
-
-/* content animate out */
-
-.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
-    opacity: 0;
-}
-
-/*-------------------------------------------
-  -- Owl Carousel
--------------------------------------------*/
-
-.owl-carousel .owl-stage, .owl-carousel .owl-stage-outer,
-.owl-carousel .owl-item {
-    height: 100%;
-}
-
-.owl-carousel .owl-dots {
-    text-align: center;
-}
-
-.owl-carousel .owl-dots .owl-dot {
-    display: inline-block;
-    padding: .3125rem;
-}
-
-.owl-carousel .owl-dots .owl-dot.active span {
-    background-color: #000;
-    opacity: 1;
-}
-
-.owl-carousel .owl-dots .owl-dot:hover span {
-    background-color: #fff;
-    opacity: .7;
-}
-
-.owl-carousel .owl-dots .owl-dot span {
-    background-color: #fff;
-    border-radius: 50%;
-    display: inline-block;
-    height: .625rem;
-    opacity: .2;
-    transition: .3s ease;
-    width: .625rem;
-}
-
-.owl-carousel .owl-nav {
-    position: absolute;
-    top: -1.25rem;
-    bottom: 0;
-    height: 0;
-    margin: auto;
-    width: 100%;
-}
-
-.owl-carousel .owl-nav .owl-prev {
-    background-color: rgba(255, 255, 255, .6);
-    border-radius: 50%;
-    box-shadow: 0 .125rem .3125rem rgba(0, 0, 0, .1);
-    color: #fff;
-    display: inline-block;
-    height: 2.5rem;
-    position: absolute;
-    text-align: center;
-    transition: .3s ease;
-    width: 2.5rem;
-}
-
-.owl-carousel .owl-nav .owl-next {
-    background-color: rgba(255, 255, 255, .6);
-    border-radius: 50%;
-    box-shadow: 0 .125rem .3125rem rgba(0, 0, 0, .1);
-    color: #fff;
-    display: inline-block;
-    height: 2.5rem;
-    position: absolute;
-    text-align: center;
-    transition: .3s ease;
-    width: 2.5rem;
-}
-
-.owl-carousel .owl-nav .owl-prev:after, .owl-carousel .owl-nav .owl-next:after {
-    font-family: "Font Awesome\ 5 Free";
-    font-weight: 900;
-    font-size: 1.375rem;
-    line-height: 2.5rem;
-    -webkit-font-smoothing: antialiased;
-}
-
-.owl-carousel .owl-nav .owl-prev:hover, .owl-carousel .owl-nav .owl-next:hover {
-    background-color: rgba(0, 0, 0, .8);
-}
-
-.owl-carousel .owl-nav .owl-next {
-    right: .3125rem;
-}
-
-.owl-carousel .owl-nav .owl-next:after {
-    content: "\f105";
-    margin-left: .1875rem;
-}
-
-.owl-carousel .owl-nav .owl-prev {
-    left: .3125rem;
-}
-
-.owl-carousel .owl-nav .owl-prev:after {
-    content: "\f104";
-    margin-right: .0625rem;
-}
-
-/***********************************************************************************************************************
-E. Template Specific Elements
-***********************************************************************************************************************/
 
 /*-------------------------------------------
   -- Other
