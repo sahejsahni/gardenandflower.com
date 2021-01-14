@@ -203,7 +203,7 @@ h4, .ts-h4 {
 }
 
 .about-pic {
-    max-width: 100%;
+    max-width: 50%;
     margin-bottom: 20px;
 }
 
@@ -234,6 +234,7 @@ h4, .ts-h4 {
     }
     .about-pic {
     padding-right: 5vw;
+    max-width: 100%;
     }
 }
 
