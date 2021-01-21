@@ -225,6 +225,7 @@ h4, .ts-h4 {
 }
 .subhead {
     font-size: 1.3rem;
+    text-transform: uppercase;
 }
 
 
@@ -2158,6 +2159,10 @@ dl dt {
 
 dl dd {
     margin-bottom: 1rem;
+}
+
+.reviews li {
+    margin-bottom: 4rem;
 }
 
 /*-------------------------------------------
