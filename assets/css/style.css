@@ -214,7 +214,6 @@ h4, .ts-h4 {
 @media (max-width: 74.9rem) {
     #head {
         font-size: 1.8rem;
-        margin-top: ;
     }
     h2 {
         font-size: 2rem;
@@ -591,10 +590,6 @@ B. Helpers
 /*-------------------------------------------
   -- Borders
 -------------------------------------------*/
-
-:root {
-    /* Border radius *//* Border bottom */
-}
 
 .ts-border-radius__sm {
     border-radius: .125rem;
@@ -1094,10 +1089,6 @@ B. Helpers
   -- Shadow
 -------------------------------------------*/
 
-:root {
-    /* Box shadow */
-}
-
 .ts-shadow__sm {
     box-shadow: 0 .125rem .3125rem rgba(0, 0, 0, .1);
 }
@@ -1207,9 +1198,6 @@ p {
   -- Title
 -------------------------------------------*/
 
-.ts-title {
-}
-
 @media (max-width: 35.9375rem) {
     .ts-title {
         margin-bottom: 2rem;
@@ -1233,9 +1221,7 @@ p {
     opacity: .5;
 }
 
-:root {
-    /* Transition *//*--tr-cubic: .5s cubic-bezier(.03,.18,.05,1.01);*/
-}
+
 
 /*-------------------------------------------
   -- Utilities
@@ -1479,7 +1465,6 @@ section {
 .carousel-section {
     padding-top: 60px;
     background-color: #000;
-    border-bot tom: .0625rem solid rgba(255, 255, 255, .3)
 }
 
 /*-------------------------------------------
@@ -2248,7 +2233,7 @@ form label, .ts-form label {
     margin-bottom: 0;
     color: #fff;
     z-index: 1;
-})
+}
 
 .ts-gallery__item.ts-floated-description {
     background-color: #000;
@@ -2985,10 +2970,6 @@ h1 a.ts-underline {
         transition: .5s cubic-bezier(.77, 0, .18, 1);
         -webkit-transform: translateX(0);
                 transform: translateX(0);
-    }
-
-    body.nav-hovered .ts-content, body.nav-hovered #brand-navigation {
-      
     }
 
     body.nav-hovered #main-navigation .navbar {
