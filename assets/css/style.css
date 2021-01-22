@@ -1156,7 +1156,13 @@ p {
     font-size: .8125rem !important;
 }
 
-.ts-xs-text-center {
+.white-link {
+    text-transform: none !important;
+    color: #ffffff;
+}
+
+.white-link:hover {
+    color: rgb(129, 129, 129) !important;
 }
 
 @media (max-width: 35.9375rem) {
