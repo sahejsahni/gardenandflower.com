@@ -1460,12 +1460,16 @@ section {
         padding-bottom: 4rem;
         background-color: #fff;
     }
+    .carousel-section .container {
+        padding: 0;
+    }
 }
 
 .carousel-section {
     padding-top: 60px;
     background-color: #000;
 }
+
 
 /*-------------------------------------------
   -- Blockquote
